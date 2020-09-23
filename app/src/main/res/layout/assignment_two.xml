@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Our Team"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints,RtlCompat"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/blackpanther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintHorizontal_bias=".9"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/imgone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/black" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/thor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toRightOf="@+id/blackpanther"
+        app:layout_constraintHorizontal_weight="2"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/imgtwo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/thorimg" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/captain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toRightOf="@+id/thor"
+        app:layout_constraintHorizontal_weight="3"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/imgthree"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/captainimg" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/officer"
+        android:layout_width="116dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:text="Adam G Executive Officer "
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/blackpanther"
+        tools:layout_editor_absoluteX="4dp"
+        tools:ignore="MissingConstraints,RtlCompat"/>
+
+    <TextView
+        android:id="@+id/marketing"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="4dp"
+        android:text="Betty L Marketing"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/thor"
+        app:layout_constraintLeft_toRightOf="@+id/officer"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <TextView
+        android:id="@+id/business"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Roberts Business Analysis"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/captain"
+        app:layout_constraintLeft_toRightOf="@+id/marketing"
+        tools:layout_editor_absoluteX="259dp"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/designer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/officer"
+        app:layout_constraintRight_toLeftOf="@+id/webdeveloper"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/imgfour"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/wonder" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/webdeveloper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="0dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/marketing"
+        app:layout_constraintLeft_toRightOf="@+id/designer"
+        app:layout_constraintHorizontal_weight="2"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/imgfive"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/iron" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mobiledev"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/business"
+        app:layout_constraintLeft_toRightOf="@+id/webdeveloper"
+        app:layout_constraintHorizontal_weight="3"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/imgsix"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hulk" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/ux"
+        android:layout_width="111dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="110dp"
+        android:text="Millow W UX Designer"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/blackpanther"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="106dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="114dp"
+        android:text="Kelvin John Web Developer"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/ux"
+        app:layout_constraintTop_toBottomOf="@+id/thor"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:text="Loura Dev Mobile Dev"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/web"
+        app:layout_constraintTop_toBottomOf="@+id/mobiledev"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="271dp" />
+
+    <TextView
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="28dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webdeveloper"
+        tools:ignore="MissingConstraints,RtlCompat"/>
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="356dp"
+        android:layout_height="368dp"
+        android:layout_marginTop="40dp"
+        android:text="A mission statement is a sentence or short paragraph that defines the existence of a business, nonprofit, government organization, or any other entity.Mission statements get at the heart of why a company exists, rather than how it exists.
+It's also important to avoid confusing a mission statement with a vision statement. The difference is that a mission statement focuses on a company’s present state while a vision statement focuses on a company’s future.It's also important to avoid confusing a mission statement with a vision statement. The difference is that a mission statement focuses on a company’s present state while a vision statement focuses on a company’s future."
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/ux"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="20dp" />
+    <TextView
+        android:id="@+id/p2"
+        android:layout_width="356dp"
+        android:layout_height="368dp"
+        android:layout_marginTop="320dp"
+        android:text="A mission statement is a sentence or short paragraph that defines the existence of a business, nonprofit, government organization, or any other entity.Mission statements get at the heart of why a company exists, rather than how it exists.
+It's also important to avoid confusing a mission statement with a vision statement.The difference is that a mission statement."
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/ux"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

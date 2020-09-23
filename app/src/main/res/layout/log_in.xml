@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="160dp"
+            android:text="Log in to your account"
+            android:textColor="#FFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="220dp"
+            android:text="Phone Number"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/first_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="250dp"
+            android:text="09 |         "
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="1dp"
+    android:layout_below="@+id/first_text"
+    android:background="#FFFFFF"
+    android:layout_marginLeft="30dp"
+    />
+
+        <TextView
+            android:id="@+id/text_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="310dp"
+            android:text="Password"
+            android:textColor="#FDD6D6"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/text_pass"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/loh_in_btn"
+            android:paddingLeft="8dp"
+            android:paddingRight="1dp"
+            android:text="LOG IN"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_pass" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="1dp"
+            android:layout_height="105dp"
+            android:layout_below="@+id/btn"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="180dp"
+            />
+
+        <TextView
+            android:id="@+id/view_text_1"
+            android:layout_width="143dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="460dp"
+            android:paddingLeft="2dp"
+            android:text="Or connect with"
+            android:textColor="#FDD6D6"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_pass"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <ImageView
+            android:id="@+id/img_facebook"
+            android:layout_width="53dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="200dp"
+            android:background="#25FFFDFD"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintTop_toBottomOf="@id/btn"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+        <ImageView
+            android:id="@+id/img_gmail"
+            android:layout_width="53dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="480dp"
+            android:background="#25FFFDFD"
+            android:src="@drawable/ic_google_plus"
+            app:layout_constraintTop_toBottomOf="@id/img_facebook"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+
+        <Button
+            android:layout_width="114dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="8dp"
+            android:text="Facebook"
+            android:background="@drawable/gmail_button"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn"
+            tools:ignore="MissingConstraints"
+            />
+
+    <Button
+        android:id="@+id/txt_gmail"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="1dp"
+        android:paddingTop="2dp"
+        android:background="@drawable/gmail_button"
+        android:text="Gmail"
+        android:textColor="#FFF"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/btn"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#51B4C1">
+
+        <Button
+            android:id="@+id/view_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/face_book"
+            android:paddingLeft="1dp"
+            android:text="forget password?"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="180dp"
+            />
+
+        <Button
+            android:id="@+id/view_text_6"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/face_book"
+            android:paddingLeft="1dp"
+            android:text="create new account"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

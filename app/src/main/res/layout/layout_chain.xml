@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintHorizontal_bias=".9"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintRight_toLeftOf="@id/btnB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnA"
+        app:layout_constraintRight_toLeftOf="@id/btnC"
+        app:layout_constraintLeft_toRightOf="@id/btnA"/>
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnA"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnB"/>
+
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="D"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintRight_toLeftOf="@id/btnE"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnA"/>
+    <Button
+        android:id="@+id/btnE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="E"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintRight_toLeftOf="@id/btnF"
+        app:layout_constraintLeft_toRightOf="@id/btnD"
+        app:layout_constraintTop_toBottomOf="@id/btnA"/>
+    <Button
+        android:id="@+id/btnF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="F"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnE"
+        app:layout_constraintTop_toBottomOf="@id/btnA"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

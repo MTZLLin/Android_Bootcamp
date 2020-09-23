@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android_Bootcamp</string>
+    <string name="str_start">send</string>
+    <string name="mm_font">ဌာနဆိုင်ရာများ၏လုပ်ငန်းစဥ်များ</string>
+    <string name="mm_btn1">ဌာနအလိုက်ရှာရန်</string>
+    <string name="mm_btn2">လုပ်ငန်းအလိုက်ရှာရန်</string>
+
+    <string name="order">Order Number: 1245783</string>
+</resources>
